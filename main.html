@@ -1,43 +1,73 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Development Task</title>
+    <style>
+        body {
+            background-color: rgb(204, 204, 204);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+        }
+        a {
+            text-decoration-line: none;
+            target: _blank;
+        }
+        .player_one, .player_two {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	
 
-	<h1>My Playlist</h1>
+    <h1>My Playlist</h1>
 
-<div class="player_one">
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a></li>
-    <li><a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a></li>
-    <li><a href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a></li>
-    <li><a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a></li>
-    <li><a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a></li>
-  </ul>
-</div>
+    <h2>Now Playing...</h2>
 
-<h2>Now Playing...</h2>
+    <div class="player_one">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a></li>
+            <li><a href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a></li>
+            <li><a href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a></li>
+            <li><a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a></li>
+        </ul>
+    </div>
 
-<div class="player_two">
-  <video controls>
-    <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-  </video>
-  <br>
-  <h2>MP3 songs</h2>
-  <p>Maan Meri Jaan</p>
-  <audio controls>
-    <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
-  </audio>
-</div>
+    <h2>MP3 songs</h2>
 
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="player_two">
+        <video controls class="video_player">
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <audio controls class="audio_player">
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
 </body>
 
